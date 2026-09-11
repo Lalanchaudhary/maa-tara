@@ -12,7 +12,7 @@ function gtag_report_conversion(url){
   const callback=()=>{if(completed)return;completed=true;if(typeof url!=='undefined')window.location=url};
   if(typeof window.gtag!=='function'){callback();return false}
   window.gtag('event','conversion',{
-    send_to:'AW-18438770077/fxxBCOvzv_EcEJ2bpdhE',
+    send_to:'AW-18445196064/Oa3HCN67r_QcEKC2rdtE',
     value:1.0,
     currency:'INR',
     event_callback:callback
@@ -22,12 +22,12 @@ function gtag_report_conversion(url){
   return false;
 }
 const whatsappMessage='I want to know more..';
-document.querySelectorAll('a[href*="wa.me/917355573856"]').forEach(link=>{
-  link.href=`https://wa.me/447355573856?text=${encodeURIComponent(whatsappMessage)}`;
+document.querySelectorAll('a[href*="wa.me/919229588102"]').forEach(link=>{
+  link.href=`https://wa.me/919229588102?text=${encodeURIComponent(whatsappMessage)}`;
   link.setAttribute('onclick','return gtag_report_conversion(this.href)');
 });
 const heroImage=document.querySelector('.portrait-frame');
 heroImage.setAttribute('role','link');heroImage.setAttribute('tabindex','0');heroImage.setAttribute('aria-label','Message MAA TARA Studio on WhatsApp');
-const heroWhatsAppUrl=`https://wa.me/447355573856?text=${encodeURIComponent(whatsappMessage)}`;
+const heroWhatsAppUrl=`https://wa.me/919229588102?text=${encodeURIComponent(whatsappMessage)}`;
 const openHeroWhatsApp=()=>gtag_report_conversion(heroWhatsAppUrl);
 heroImage.setAttribute('onclick','return gtag_report_conversion(heroWhatsAppUrl)');heroImage.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openHeroWhatsApp()}});
