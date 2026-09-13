@@ -12,7 +12,7 @@ function gtag_report_conversion(url){
   const callback=()=>{if(completed)return;completed=true;if(typeof url!=='undefined')window.location=url};
   if(typeof window.gtag!=='function'){callback();return false}
   window.gtag('event','conversion',{
-    send_to:'AW-18445196064/Oa3HCN67r_QcEKC2rdtE',
+    send_to:'AW-18447909644/5VstCP7m5_UcEIyG09xE',
     value:1.0,
     currency:'INR',
     event_callback:callback
